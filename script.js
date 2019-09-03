@@ -1,41 +1,26 @@
 
-$(document).ready(function() {
+$(".stream-nav").on("click", function() {
 
-    $("#stream1_btn").on("click", function() {
+    // A selector to match all cards in all streams
 
-        $(".stream1").removeClass('highlight_stream');
+    var allStreamsCardsSelector = ".card";
 
-        $(".stream2").removeClass('highlight_stream');
+    // A selector to match just this stream's cards
 
-        $(".stream3").removeClass('highlight_stream');
+    // for this, we use the class with the name of the stream,
 
-        $(".stream1").addClass('highlight_stream');
+    // which is the same as this nav link's id and then the "-card" suffix.
 
-   });
+    var thisStreamCardsSelector = "." + this.id + "-card";
 
-   $("#stream2_btn").on("click", function() {
 
-        $(".stream1").removeClass('highlight_stream');
 
-        $(".stream2").removeClass('highlight_stream');
+    // First remove the highlight from all of the cards
 
-        $(".stream3").removeClass('highlight_stream');
+    $(allStreamsCardsSelector).removeClass("card-highlight");
 
-        $(".stream2").addClass('highlight_stream');
+    // Then apply the highlight to just this stream's cards
 
-   });
+    $(thisStreamCardsSelector).addClass("card-highlight");
 
-   $("#stream3_btn").on("click", function() {
-
-        $(".stream1").removeClass('highlight_stream');
-
-        $(".stream2").removeClass('highlight_stream');
-
-        $(".stream3").removeClass('highlight_stream');
-
-        $(".stream3").addClass('highlight_stream');
-
-   });
-
-}); 
-
+});
