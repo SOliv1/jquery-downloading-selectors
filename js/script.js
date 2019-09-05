@@ -34,5 +34,10 @@ $(document).ready(function() {
 		$(this).next().children("p").slideDown();
 
 	});
+	
+	$(".card").click(function() {
+		$(this).toggleClass("highlight");	 
+
+	});
 
 });

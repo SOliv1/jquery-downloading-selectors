@@ -86,8 +86,6 @@ div{
 
 }
 
-
-
 #container
 
 {
@@ -119,6 +117,12 @@ div{
 	margin: 10px;
 	padding: 20px;
 	background-color: #fff;
+
+}
+
+.highlight{
+
+	background-color: pink;
 
 }
 
@@ -186,8 +190,6 @@ li{
 
 }
 
-
-
 #logoNav{
 
 	flex:6;
@@ -200,7 +202,6 @@ li{
 
 
 .underline{
-
 	text-decoration:underline;
 
 }
@@ -210,9 +211,6 @@ li{
 	border: solid 5px #ccc;
 
 }
-
-
-
 
 
 @media screen and (max-width: 700px){
