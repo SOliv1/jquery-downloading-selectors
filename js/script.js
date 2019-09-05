@@ -14,12 +14,24 @@ $(document).ready(function() {
 	});
 
 
-
 	// Toggle the visibility of the paragraph when a button is clicked 
 
 	$("button").click(function(){
 
 		$(this).prev().slideToggle('slow');
+
+	});
+
+	// Toggle the visibility of the paragraph when a button is clicked 
+	$("button").click(function(){
+		$(this).prev().slideToggle('slow');
+
+	});
+
+	// Open the paragraph once the image is clicked
+
+	$("img").click(function() {
+		$(this).next().children("p").slideDown();
 
 	});
 
