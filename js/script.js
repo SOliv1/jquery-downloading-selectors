@@ -31,6 +31,22 @@ $(document).ready(function() {
 		$(this).toggleClass("highlight");	 
 
 	});
+	
+	// All cards that are not currently selected will be hidden when `select_btn` is clicked
+
+	$("#select_btn").click(function() {
+
+		$(".card:not(.highlight)").hide();	 
+
+	});
+
+// Select all cards
+
+	$("#all_btn").click(function(){
+
+		$(".card").show();	
+		
+	});
 
 });
 
